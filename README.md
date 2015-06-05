@@ -11,9 +11,11 @@ BounceGalleryViewController is a UICollectionView subclass (and view controller)
 *A pre-requisite for use is to have access to the device's Assets Library.*
 
 Usage is simple:
-"""
+
+```objectivec
 _bounce = [[BounceGalleryViewController alloc] initWithCollectionViewLayout: [[BounceGalleryFlowLayout alloc] init] andAssets:@[/* NSArray of ALAsset objects */];
 
 if (_bounce) [self presentViewController:_bounce animated:TRUE completion:nil];
-"""
+```
+
 That's it, and this includes a fully fleshed out sharing capabilities.
