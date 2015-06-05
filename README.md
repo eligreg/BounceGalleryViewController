@@ -18,4 +18,10 @@ _bounce = [[BounceGalleryViewController alloc] initWithCollectionViewLayout: [[B
 if (_bounce) [self presentViewController:_bounce animated:TRUE completion:nil];
 ```
 
+The gallery is built and presented all on the main thread. Additional assets can be called afterward, and will be added off the main thread and will reload the gallery gracefully.
+
+```objectivec
+[_bounce addImagesFromAssetsInBatch:@[/* more ALAsset objects */]];
+```
+
 That's it, and this includes a fully fleshed out sharing capabilities.
