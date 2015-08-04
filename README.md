@@ -1,4 +1,4 @@
-# BounceGalleryViewController
+# BounceGalleryViewController 0.1
 Contextually aware partitioned image gallery built on top of UIKit dynamics. Repo includes image detail controller with common U.S. and other social sharing capabilities.
 
 Watch a video of Bounce Gallery in action:
